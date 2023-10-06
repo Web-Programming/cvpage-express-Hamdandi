@@ -1,0 +1,65 @@
+extends layout
+
+block content
+  doctype html
+  html(lang="en")
+    head
+      meta(charset="UTF-8")
+      meta(name="viewport", content="width=device-width, initial-scale=1.0")
+      title CV Hamdandi
+      // Masukkan tautan ke file CSS Bootstrap di sini
+
+    body
+     // Tentang Saya
+    section#tentang-saya.py-5
+      .container
+        .row.align-items-center
+          .col-lg-6
+            img(src="images/profile.jpeg", alt="Foto Profil", class="profile-img")
+          .col-lg-6
+            h1 Muhammad Hamdandi
+            h2 About Me
+            p Saya adalah seorang mahasiswa sistem informasi 
+
+      // Portofolio
+      section#portofolio.py-5
+        .container
+          h2 Education
+          .row
+            .col-md-4
+              .card
+                .card-body
+                  h4.card-title Universitas Multi Data Palembang
+                  p.card-text undergraduate Degree 
+                  .br 2020 - Present
+
+          h2 Experience
+          .row
+            .col-md-4
+              .card
+                .card-body
+                  h4.card-title Unit Kegiatan Mahasiswa Programming Universitas Multi Data Palembang
+                  p.card-text Coordinator of Game Development SPecialization Field
+                  .br Apr 2023 - Present
+            .col-md-4
+              .card
+                .card-body
+                  h4.card-title Mobile Developer Student
+                  p.card-text Bangkit Academu led by Google, Tokopedia, Gojek, & Traveloka
+                  .br Feb 2023 - Jun 2023
+            .col-md-4
+              .card
+                .card-body
+                  h4.card-title Game Developer Student
+                  p.card-text Skilvul
+                  .br Aug 2022 - Dec 2022
+
+      // Kontak
+      section#kontak.bg-light.py-5
+        .container
+          h2 Kontak
+          strong Alamat: jln K.H Azhari 
+          br
+          strong Email: mhd.hamdandi@gmail.com
+          br
+          strong No. Telepon: +62895-3839-56583
