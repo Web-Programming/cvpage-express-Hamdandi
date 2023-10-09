@@ -1,65 +1,78 @@
 extends layout
 
 block content
-  doctype html
-  html(lang="en")
-    head
-      meta(charset="UTF-8")
-      meta(name="viewport", content="width=device-width, initial-scale=1.0")
-      title CV Hamdandi
-      // Masukkan tautan ke file CSS Bootstrap di sini
+  .container.bg-white.mt-1.rounded-4.card
+    .row-fluid.justify-content-center.align-items-center
+      .col-md-8.offset-sm-2
+        .row.align-items-center.pt-5
+          .col-md-5
+            img.img-fluid.border.border-dark-subtle.border-5.rounded-circle(src="images/profile.jpeg", alt="tidak ada foto", style="min-width: 100%;")
+          .col-md-7.pt-3
+            h1.text-uppercase.fw-bold.pb-1.fs-1  Muhammad Hamdandi
+            p.text-uppercase.fw-bold.fs-4 Junior Programmer
+            p.fw-semibold.fs-5.text-secondary I am a very results-oriented individual and always strive to achieve the best in every task I handle. I have good communication skills, both in spoken and written language, and I enjoy working in teams to achieve common goals. I also have strong analytical skills and am very familiar with the use of various software and tools required in my work.
+        .row.pb-3.border-bottom.border-4
+          .col-md-12
+            .row.pb-3.border-bottom.border-4
+            h2.text-uppercase.fs-4.fw-bold.text-primary Experience 
+            .row.border-bottom.border-4
+            ul
+              h2.fs-5.fw-bold.text-decoration-underline Unit Kegiatan Mahasiswa Programming Universitas Multi Data Palembang
+              p.fs-6.fw-semibold 
+                  | Apr 2023 - Present (Coordinator of Game Development Specialization Field )
+                  br
+                  | Sep 2022 - Present (Member)
+              h2.fs-5.fw-bold.text-decoration-underline Mobile Developer Student
+              p.fs-6.fw-semibold 
+                  | bangkit Academy led by Google, Tokopedia, Gojek, & Traveloka
+                  br
+                  | Feb 2023 - Jun 2023
+              h2.fs-5.fw-bold.text-decoration-underline Game Developer Student 
+              p.fs-6.fw-semibold 
+                  | Skilvul
+                  br
+                  | Aug 2022 - Dec 2022
 
-    body
-     // Tentang Saya
-    section#tentang-saya.py-5
-      .container
-        .row.align-items-center
-          .col-lg-6
-            img(src="images/profile.jpeg", alt="Foto Profil", class="profile-img")
-          .col-lg-6
-            h1 Muhammad Hamdandi
-            h2 About Me
-            p Saya adalah seorang mahasiswa sistem informasi 
-
-      // Portofolio
-      section#portofolio.py-5
-        .container
-          h2 Education
-          .row
-            .col-md-4
-              .card
-                .card-body
-                  h4.card-title Universitas Multi Data Palembang
-                  p.card-text undergraduate Degree 
-                  .br 2020 - Present
-
-          h2 Experience
-          .row
-            .col-md-4
-              .card
-                .card-body
-                  h4.card-title Unit Kegiatan Mahasiswa Programming Universitas Multi Data Palembang
-                  p.card-text Coordinator of Game Development SPecialization Field
-                  .br Apr 2023 - Present
-            .col-md-4
-              .card
-                .card-body
-                  h4.card-title Mobile Developer Student
-                  p.card-text Bangkit Academu led by Google, Tokopedia, Gojek, & Traveloka
-                  .br Feb 2023 - Jun 2023
-            .col-md-4
-              .card
-                .card-body
-                  h4.card-title Game Developer Student
-                  p.card-text Skilvul
-                  .br Aug 2022 - Dec 2022
-
-      // Kontak
-      section#kontak.bg-light.py-5
-        .container
-          h2 Kontak
-          strong Alamat: jln K.H Azhari 
-          br
-          strong Email: mhd.hamdandi@gmail.com
-          br
-          strong No. Telepon: +62895-3839-56583
+        .row.pt-2.pb-3
+          .col
+            h2.text-uppercase.fs-4.fw-bold.text-primary Education 
+            .row.border-bottom.border-4
+            ul
+              h2.fs-5.fw-bold.text-decoration-underline SMK Muhammadiyah 2 Palembang
+              p.fs-6.fw-semibold 
+                  | Jurusan Teknik Komputer dan Jaringan
+                  br
+                  | Agustus 2016 - Mei 2019
+              h2.fs-5.fw-bold.text-decoration-underline Universitas Multi Data Palembang
+              p.fs-6.fw-semibold 
+                  | Jurusan Sistem Informasi
+                  br
+                  | Agustus 2020 - Sekarang (Undergraduate degree) 
+        .row.pt-2.pb-3.border-bottom.border-5
+          .col-md-2
+            .row.border-bottom.border-4
+            h2.fw-bold.text-primary.text-uppercase.fs-4 Contact
+            .row.border-bottom.border-4
+            ul.fs-5
+              li Alamat   :
+              li Email    :
+              li github   :
+              li linkedin :
+              li No. Telp :
+          .col-md-10
+            .row.border-bottom.border-4
+            h2.fw-bold.text-white.text-uppercase.fs-4 Contact
+            .row.border-bottom.border-4
+            ul.fs-5
+              | jln.K.H Azhari lr harapan 13 Ulu Palembang
+              br
+              | mhd.hamdandi@gmail.com
+              br
+              a(href="https://github.com/Hamdandi") hamdandi
+              br
+              a(href="https://www.linkedin.com/in/muhammad-hamdandi-719585247/" target="_blank") Muhammad Hamdandi
+              br
+              | (+62) 895-3839-56583
+        .row.pt-4.pb-3
+          .col
+            p.fw-bold.text-secondary © Muhammad Hamdandi
